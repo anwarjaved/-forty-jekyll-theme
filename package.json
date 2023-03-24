@@ -27,8 +27,8 @@
     "uglify-js": "^3.13.6"
   },
   "scripts": {
-    "dev": "tinacms dev -c \"bundle exec jekyll serve\"",
-    "build": "tinacms build && jekyll build"
+    "dev": "tinacms dev -c \"bundle exec jekyll serve -d build\"",
+    "build": "tinacms build && jekyll build  -d build"
   },
   "dependencies": {
     "@tinacms/cli": "^1.4.0",

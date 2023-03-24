@@ -5,11 +5,11 @@ const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
 export default defineConfig({
   branch,
-  clientId: "72ecde72-1cd4-44ae-9e28-047b83d86f34", // Get this from tina.io
-  token: "b6656317b8e8b41d9c0d1c4ef278b71904d2f0c1", // Get this from tina.io
+  clientId: "65fb8ef7-903b-4e1f-a760-7cafd3849db2", // Get this from tina.io
+  token: "bbdb6d9e548307467c76d8f1f6c6f8222baf7eaa", // Get this from tina.io
   build: {
     outputFolder: "admin",
-    publicFolder: "/",
+    publicFolder: "",
   },
   media: {
     tina: {
@@ -19,26 +19,58 @@ export default defineConfig({
   },
   schema: {
     collections: [
-      {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-          },
-        ],
-      },
-    ],
+		{
+		  name: "post",
+		  label: "Posts",
+		  path: "_posts",
+		  ui: {
+			filename: {
+			  readonly: false,
+			  slugify: values => {
+				const date = new Date();
+				const day = date.getDate();
+				const month = date.getMonth() + 1;
+				const year = date.getFullYear();
+		  
+				let currentDate = `${year}-${month}-${day}`;
+		  
+				return `${currentDate}-${values?.title?.toLowerCase().replace(/ /g, '-')}`
+			  }
+			}
+		  },
+		  fields: [
+			{
+			  type: "string",
+			  name: "layout",
+			  label: "Layout",
+			  required: true,
+			},
+			{ 
+			  type: "string",
+			  name: "title",
+			  label: "Title",
+			  isTitle: true,
+			  required: true,
+			},
+			{ 
+			  type: "datetime",
+			  name: "date",
+			  label: "Date",
+			  required: true,
+			},
+			{ 
+			  type: "string",
+			  name: "categories",
+			  label: "Categories",
+			},
+			{
+			  type: "rich-text",
+			  name: "body",
+			  label: "Body",
+			  isBody: true,
+			},
+		  ],
+		},
+	  ],
   },
 });
