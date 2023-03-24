@@ -28,7 +28,7 @@
   },
   "scripts": {
     "dev": "tinacms dev -c \"bundle exec jekyll serve -d build\"",
-    "build": "tinacms build && jekyll build  -d build"
+    "build": "tinacms build && bundle exec jekyll build  -d build"
   },
   "dependencies": {
     "@tinacms/cli": "^1.4.0",
