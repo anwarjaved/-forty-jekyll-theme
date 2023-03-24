@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://anwarjaved.github.io//content/posts/hello-world/</loc>
+<loc>https://anwarjaved.github.io/forty-jekyll-theme/content/posts/hello-world/</loc>
 </url>
 <url>
-<loc>https://anwarjaved.github.io//</loc>
+<loc>https://anwarjaved.github.io/forty-jekyll-theme/</loc>
 </url>
 <url>
-<loc>https://anwarjaved.github.io//admin/</loc>
-<lastmod>2023-03-24T12:24:18+00:00</lastmod>
+<loc>https://anwarjaved.github.io/forty-jekyll-theme/admin/</loc>
+<lastmod>2023-03-24T12:29:08+00:00</lastmod>
 </url>
 </urlset>
