@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/content/posts/hello-world/</loc>
+<loc>https://anwarjaved.github.io//content/posts/hello-world/</loc>
 </url>
 <url>
-<loc>/</loc>
+<loc>https://anwarjaved.github.io//</loc>
 </url>
 <url>
-<loc>/admin/</loc>
-<lastmod>2023-03-24T12:10:36+00:00</lastmod>
+<loc>https://anwarjaved.github.io//admin/</loc>
+<lastmod>2023-03-24T12:22:11+00:00</lastmod>
 </url>
 </urlset>
