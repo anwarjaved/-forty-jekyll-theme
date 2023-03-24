@@ -1,0 +1,2 @@
+var n=Object.defineProperty,f=(t,a)=>n(t,"name",{value:a,configurable:!0});function i(t,a){const r=[];let e=t;for(;e!=null&&e.kind;)r.push(e),e=e.prevState;for(let o=r.length-1;o>=0;o--)a(r[o])}f(i,"forEachState");export{i as f};
+//# sourceMappingURL=forEachState.es-1e367fb2.js.map

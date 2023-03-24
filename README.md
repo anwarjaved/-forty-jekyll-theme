@@ -1,1 +1,0 @@
-# forty-jekyll-theme
